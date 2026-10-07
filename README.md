@@ -4,7 +4,7 @@
 
 Works in Google Meet, Zoom and Microsoft Teams in the browser, and on any other video-call site you enable.
 
-- 🔒 **Privacy policy:** [privacy.html](https://YOUR-LOGIN.github.io/wavish/privacy.html)
+- 🔒 **Privacy policy:** [privacy.html](https://github.com/Kuzevych/wavish/blob/main/privacy.html)
 - 🧩 **Chrome Web Store:** coming soon
 - ✉️ **Contact:** wavish.extension@gmail.com
 
