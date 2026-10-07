@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wavish — Privacy Policy</title>
+<link rel="icon" href="icon-128.png">
+<style>
+  :root { --bg:#fff; --fg:#1f2328; --muted:#59636e; --accent:#1a73e8; --card:#f6f8fa; --border:#d1d9e0; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0d1117; --fg:#e6edf3; --muted:#9198a1; --accent:#6aa8ff; --card:#151b23; --border:#30363d; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 80px; }
+  header { display:flex; align-items:center; gap:14px; margin-bottom: 8px; }
+  header img { width:48px; height:48px; }
+  h1 { font-size: 28px; margin: 0; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  .muted { color: var(--muted); font-size: 14px; }
+  .card { background: var(--card); border:1px solid var(--border); border-radius: 12px; padding: 16px 20px; margin: 20px 0; }
+  table { width:100%; border-collapse: collapse; font-size: 15px; }
+  td, th { text-align:left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header><img src="icon-128.png" alt=""><h1>Wavish — Privacy Policy</h1></header>
+  <p class="muted">Last updated: October 6, 2026</p>
+
+  <section id="en">
+    <div class="card"><strong>In short:</strong> Wavish processes your camera video only on your own computer. It does not collect, send or sell any data. It has no accounts, no servers and no analytics.</div>
+
+    <h2>What the extension does</h2>
+    <p>Wavish lets you hide yourself on browser video calls (Google Meet, Zoom and Microsoft Teams in the browser, and any other site you enable). When you choose to be invisible, the extension replaces your camera image with a picture of your empty room. It can also freeze your video and recognise a hand gesture to switch these modes.</p>
+
+    <h2>Data the extension handles</h2>
+    <table>
+      <tr><th>Data</th><th>How it is used</th><th>Where it stays</th></tr>
+      <tr><td>Camera video</td><td>Processed frame by frame to mix in the background, freeze the image and recognise your hand gesture.</td><td>Only in your computer's memory while the camera is on. Never stored on disk, never transmitted.</td></tr>
+      <tr><td>A few seconds of recent video (freeze loop)</td><td>Played back when you freeze the image.</td><td>In memory only; continuously overwritten; deleted when the camera turns off or the tab closes.</td></tr>
+      <tr><td>Background picture (your empty room)</td><td>Shown instead of you while you are invisible.</td><td>In memory; saved to your browser's local extension storage only if you press "Save background". You can delete it at any time.</td></tr>
+      <tr><td>Settings (language, gesture, hotkeys and similar)</td><td>To remember your preferences.</td><td>Your browser's local extension storage.</td></tr>
+      <tr><td>Sites you enable</td><td>To run the extension on those sites.</td><td>Your browser's permission settings. You can remove them in the extension.</td></tr>
+    </table>
+
+    <h2>What we do not do</h2>
+    <ul>
+      <li>We do not send your video, images, settings or any other data to any server — ours or anyone else's.</li>
+      <li>We do not use analytics, tracking, advertising or cookies.</li>
+      <li>We do not read the content of the pages you visit, your chats or your contacts.</li>
+      <li>We do not sell or share data with third parties.</li>
+    </ul>
+
+    <h2>Gesture recognition</h2>
+    <p>Hand gestures are recognised by Google's open-source MediaPipe library, which is bundled inside the extension and runs entirely on your device. The library contains optional built-in usage statistics; Wavish blocks all outgoing network connections from its own pages, so these statistics are never sent.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Camera</strong> — asked once on the setup page; used only for gesture recognition on your device.</li>
+      <li><strong>Access to Google Meet, Zoom and Microsoft Teams sites</strong> — to process the camera on those pages.</li>
+      <li><strong>Optional access to other sites</strong> — only for sites you enable yourself.</li>
+      <li><strong>Storage, scripting, active tab, offscreen document</strong> — to save settings, run on enabled sites, show the status of the current tab and run gesture recognition in the background.</li>
+    </ul>
+
+    <h2>Deleting your data</h2>
+    <p>Delete the saved background in the extension, or remove the extension — Chrome then deletes all of its stored data.</p>
+
+    <h2>Children</h2>
+    <p>The extension is not directed at children and does not knowingly handle children's data.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be published on this page with a new date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions: <a href="mailto:wavish.extension@gmail.com">wavish.extension@gmail.com</a></p>
+  </section>
+
+</main>
+</body>
+</html>
